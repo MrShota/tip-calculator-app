@@ -1,0 +1,254 @@
+:root {
+    --bg-color: #C5E4E7;
+    --bg-main: #FFFFFF;
+    --bg-secondary: #00474B;
+    --txt-color-sec: #7F9D9F;
+    --bg-input: #F3F9FA;
+    --btn-color: #26C2AE;
+    --btn-custom: #547878;
+    --txt-color: #5E7A7D;
+    --icon-color: #9EBBBD;
+
+    --font-s: 1rem;
+    --font-m: 1.5rem;
+    --font-l: 3rem;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono';
+}
+
+/* body{
+    background-color: purple;
+}
+.container{
+    background-color: red;
+}
+.section-one{
+    background-color: yellow;
+}
+.section-two{
+    background-color: green;
+} */
+
+.container {
+    /* width: 100%;
+    height: 100%;
+    */
+    background-color: var(--bg-color);
+}
+
+/* logo  */
+
+.img img {
+
+    padding: 50px 144px 40px;
+
+
+}
+
+/* mobile  */
+.main-section {
+    max-width: 375px;
+    /* height: 789px; */
+
+    background-color: var(--bg-main);
+
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0 32px 43px rgba(79, 166, 175, .02);
+
+}
+
+/* ------section one ---------- */
+.section-one {
+    padding: 32px;
+}
+
+.section-one label {
+    font-family: 'Space Mono';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #5E7A7D;
+
+}
+
+.bill-input,
+.people-input {
+    width: 311px;
+    height: 48px;
+
+    border-radius: 5px;
+    border: none;
+    background-color: var(--bg-input);
+    text-align: right;
+}
+
+.bill-input:hover,
+.people-input:hover {
+    border: 2px solid #26C2AE;
+    background-color: var(--bg-input);
+}
+
+.section-one [value="0"] {
+    padding-right: 20px;
+    color: var(--bg-secondary);
+}
+
+
+.form-dollar {
+    position: relative;
+}
+
+.form-dollar::before {
+    content: url(../images/icon-dollar.svg);
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.btn-div {
+    padding: 22px 0 32px;
+}
+
+.btn {
+    width: 147px;
+    height: 48px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--bg-secondary);
+    margin-top: 16px;
+
+    font-size: var(--font-m);
+    line-height: 36px;
+    font-weight: 700;
+    color: var(--bg-main);
+}
+
+.btn:hover {
+    background-color: var(--btn-color);
+    color: #00474B;
+    cursor: pointer;
+}
+
+.btn-input {
+
+    background-color: var(--bg-input);
+    color: var(--btn-custom);
+    padding-left: 25px;
+}
+
+.btn-input:hover {
+    border: 2px solid #26C2AE;
+    background-color: var(--bg-input);
+}
+
+.form-people {
+    position: relative;
+}
+
+.form-people::before {
+    content: url(../images/icon-person.svg);
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+/* ----------section two ---------------- */
+
+.section-two {
+    /* width: 327px; */
+    margin: 0 24px ;
+    border-radius: 15px;
+    background-color: var(--bg-secondary);
+
+    padding: 37px 23px 24px;
+}
+
+.display-text-top,
+.display-text-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-span {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 23.7px;
+    color: var(--bg-main);
+    text-transform: capitalize;
+}
+
+.display-para {
+    font-size: .750rem;
+    font-weight: 700;
+    line-height: 19.25px;
+    color: var(--txt-color-sec);
+    text-transform: capitalize;
+
+}
+
+.display-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 47.39px;
+    letter-spacing: -.67px;
+    color: var(--btn-color);
+}
+
+.reset-btn {
+    width: 281px;
+    height: 48px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--btn-color);
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--bg-secondary);
+    text-transform: uppercase;
+
+    margin-top: 33px;
+}
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 20px 20%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* ----------desktop ------------------ */
+@media (min-width:1024px) {
+    
+    .main-section{
+        width: 920px;
+        height: 481px;
+        background-color: var(--bg-main);
+        display: flex;
+        margin-inline: auto;
+
+    }
+    .section-two{
+        width: 413px;
+        /* margin: 0; */
+    }
+    
+}
+
