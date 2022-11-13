@@ -23,39 +23,35 @@
     font-family: 'Space Mono';
 }
 
-/* body{
-    background-color: purple;
-}
-.container{
-    background-color: red;
-}
-.section-one{
-    background-color: yellow;
-}
-.section-two{
-    background-color: green;
-} */
-
 .container {
-    /* width: 100%;
-    height: 100%;
-    */
+
     background-color: var(--bg-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* logo  */
 
-.img img {
-
-    padding: 50px 144px 40px;
+.img {
+    padding: 50px 0 40px;
 
 
 }
 
 /* mobile  */
 .main-section {
-    max-width: 375px;
-    /* height: 789px; */
+    width: 375px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    /* padding: 32px 24px; */
+
+    justify-content: center;
+    align-items: center;
 
     background-color: var(--bg-main);
 
@@ -162,14 +158,13 @@
 }
 
 /* ----------section two ---------------- */
-
 .section-two {
-    /* width: 327px; */
-    margin: 0 24px ;
+    width: 327px;
     border-radius: 15px;
     background-color: var(--bg-secondary);
 
     padding: 37px 23px 24px;
+    margin-bottom: 32px;
 }
 
 .display-text-top,
@@ -219,10 +214,6 @@
     margin-top: 33px;
 }
 
-
-
-
-
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -235,20 +226,62 @@
 
 
 /* ----------desktop ------------------ */
+
 @media (min-width:1024px) {
-    
-    .main-section{
+
+    .main-section {
+        flex-direction: row;
         width: 920px;
-        height: 481px;
-        background-color: var(--bg-main);
-        display: flex;
-        margin-inline: auto;
+        border-radius: 25px;
+        box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+        /* margin-bottom: 239px; */
+        /* gap: 48px; */
+    }
+
+    .img {
+        padding: 130px 0 87px;
+    }
+    .section-one{
+        padding: 40px;
+    }
+
+    .bill-input,
+    .people-input {
+        width: 379px;
 
     }
-    .section-two{
+
+    .btn-div {
+        width: 379px;
+        padding: 40px 0;
+    }
+
+    .btn {
+        width: 117px;
+    }
+
+
+    .section-two {
         width: 413px;
-        /* margin: 0; */
-    }
-    
-}
 
+        padding: 40px;
+
+        margin: 32px;
+    }
+
+    .display-text-bottom {
+        padding-top: 40px;
+    }
+
+    .reset-btn {
+        margin-top: 122px;
+    }
+
+    .attribution {
+        padding: 100px 20%;
+        margin-bottom: 80px;
+    }
+
+
+
+}
