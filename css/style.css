@@ -181,7 +181,8 @@
     text-transform: capitalize;
 }
 
-.display-para {
+.display-para,
+.total-para {
     font-size: .750rem;
     font-weight: 700;
     line-height: 19.25px;
@@ -190,7 +191,8 @@
 
 }
 
-.display-amount {
+.tip-amount,
+.total-amount {
     font-size: 2rem;
     font-weight: 700;
     line-height: 47.39px;
