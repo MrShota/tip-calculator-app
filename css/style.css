@@ -157,6 +157,11 @@
     top: 50%;
     left: 5%;
 }
+#errorText{
+color: red;
+font-size: .7rem;
+float: right;
+}
 
 /* ----------section two ---------------- */
 .section-two {
