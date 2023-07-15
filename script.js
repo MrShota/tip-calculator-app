@@ -19,18 +19,15 @@ const resetBtn = document.getElementById('reset-btn');
 btn5.addEventListener('click', calculator);
 // btn10.addEventListener('click', calculator);
 
-
-
-function calculator(tip) {
+function calculator() {
     if (peopleInput.value === '') {
         errorText.innerText=`Can't be zero`;
         errorText.style.color='red'
     }
     else {
         errorText.innerText=``;
-        tipAmount.innerText = (billInput.value * tip / 100) / peopleInput.value;
-        totalAmount.innerText = (+billInput.value + (billInput.value * tip / 100)) / peopleInput.value;
-
+        tipAmount.innerText = (billInput.value * 5 / 100) / peopleInput.value;
+        totalAmount.innerText = (+billInput.value + (billInput.value * 5 / 100)) / peopleInput.value;
     }
 }
 
