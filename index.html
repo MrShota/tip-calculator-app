@@ -22,9 +22,6 @@
 <body>
 
   <div class="container">
-
-
-
     <!-- ----------------  logo --------------------- -->
     <div class="img">
       <img src="images/logo.svg" alt="logo">
@@ -32,28 +29,26 @@
     <div class="main-section">
       <!-- --------------section one ----------------------- -->
       <div class="section-one">
-
         <form class="form-dollar" action="#">
           <label for="bill-input">bill</label> <br>
-          <input class="bill-input" type="text" value="0">
+          <input class="bill-input" id="bill-input" type="text" value="0">
         </form>
-
         <div class="btn-div">
 
           <label for="btns">select tip %</label> <br>
 
-          <button class="btn btn5" type="button">5%</button>
-          <button class="btn btn10" type="button">10%</button>
-          <button class="btn btn15" type="button">15%</button>
-          <button class="btn btn25" type="button">25%</button>
-          <button class="btn btn50" type="button">50%</button>
+          <button class="btn" id="btn5" type="button">5%</button>
+          <button class="btn" id="btn10" type="button">10%</button>
+          <button class="btn" id="btn15" type="button">15%</button>
+          <button class="btn" id="btn25" type="button">25%</button>
+          <button class="btn" id="btn50" type="button">50%</button>
 
-          <input class="btn btn-input" type="button" value="Custom">
+          <input class="btn" id="btn-input" value="Custom">
         </div>
 
         <form class="form-people" action="#">
           <label for="people-input">Number of People</label> <br>
-          <input class="people-input" type="text" value="0" placeholder="0">
+          <input class="people-input" id="people-input" type="text" value="0" placeholder="0">
         </form>
 
       </div>
@@ -65,7 +60,7 @@
             / person
           </p>
 
-          <p class="tip-amount"> $0.00 </p>
+          <p class="tip-amount" id="tip-amount"> $0.00 </p>
 
         </div>
         <div class="display-text-bottom">
@@ -74,15 +69,13 @@
             / person
           </p>
 
-          <p class="total-amount"> $0.00 </p>
+          <p class="total-amount" id="total-amount"> $0.00 </p>
 
         </div>
 
-        <button class="reset-btn">reset</button>
+        <button class="reset-btn" id="reset-btn">reset</button>
       </div>
     </div>
-
-
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://github.com/MrShota">Shota Shavadze</a>.

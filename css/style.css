@@ -134,14 +134,15 @@
     cursor: pointer;
 }
 
-.btn-input {
+#btn-input {
 
     background-color: var(--bg-input);
     color: var(--btn-custom);
     padding-left: 25px;
+    cursor: default;
 }
 
-.btn-input:hover {
+#btn-input:hover {
     border: 2px solid #26C2AE;
     background-color: var(--bg-input);
 }
@@ -243,7 +244,8 @@
     .img {
         padding: 130px 0 87px;
     }
-    .section-one{
+
+    .section-one {
         padding: 40px;
     }
 

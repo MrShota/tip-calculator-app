@@ -1,20 +1,20 @@
 'use strict'
 
 // dom elements
-const billInput = document.getElementsByClassName('.bill-input');
+const billInput = document.getElementById('bill-input');
 
-const btn5 = document.getElementsByClassName('.btn5');
-const btn15 = document.getElementsByClassName('.btn15');
-const btn25 = document.getElementsByClassName('.btn25');
-const btn50 = document.getElementsByClassName('.btn50');
-const custom = document.getElementsByClassName('.btn-input');
+const btn5 = document.getElementById('btn5');
+const btn15 = document.getElementById('btn15');
+const btn25 = document.getElementById('btn25');
+const btn50 = document.getElementById('btn50');
+const custom = document.getElementById('btn-input');
 
-const peopleInput = document.getElementsByClassName('.people-input');
+const peopleInput = document.getElementById('people-input');
 
-const tipAmount = document.getElementsByClassName('.tip-amount');
-const totalAmount = document.getElementsByClassName('.total-amount');
+const tipAmount = document.getElementById('tip-amount');
+const totalAmount = document.getElementById('total-amount');
 
-const resetBtn = document.getElementsByClassName('.reset-btn');
+const resetBtn = document.getElementById('reset-btn');
 
 // reset btn 
 function resetBtn() {
@@ -25,7 +25,7 @@ function resetBtn() {
     tipAmount.value='$0.00';
     totalAmount.value='$0.00';
 
-    resetBtn.style.backgroundColor: #0D686D;
+    resetBtn.style.backgroundColor= #0D686D;
 
 
  
