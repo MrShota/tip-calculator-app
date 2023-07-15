@@ -1,5 +1,3 @@
-'use strict'
-
 // dom elements
 const billInput = document.getElementById('bill-input');
 
@@ -16,19 +14,22 @@ const totalAmount = document.getElementById('total-amount');
 
 const resetBtn = document.getElementById('reset-btn');
 
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
 // reset btn 
-function resetBtn() {
-    billInput.value = '';
-    custom.value='Custom';
-    peopleInput.value = '';
-
-    tipAmount.value='$0.00';
-    totalAmount.value='$0.00';
-
-    resetBtn.style.backgroundColor= #0D686D;
-
-
- 
-
-
-}
