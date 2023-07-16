@@ -17,18 +17,47 @@ const totalAmount = document.getElementById('total-amount');
 const resetBtn = document.getElementById('reset-btn');
 
 btn5.addEventListener('click', function () {
+    btn5.style.background = '#26C2AE'
+    btn10.style.background = ''
+    btn15.style.background = ''
+    btn25.style.background = ''
+    btn50.style.background = ''
     calculator(5)
 });
 btn10.addEventListener('click', function () {
+    btn5.style.background = ''
+    btn10.style.background = '#26C2AE'
+    btn15.style.background = ''
+    btn25.style.background = ''
+    btn50.style.background = ''
+
     calculator(10)
 });
 btn15.addEventListener('click', function () {
+    btn5.style.background = ''
+    btn10.style.background = ''
+    btn15.style.background = '#26C2AE'
+    btn25.style.background = ''
+    btn50.style.background = ''
+
     calculator(15)
 });
 btn25.addEventListener('click', function () {
+    btn5.style.background = ''
+    btn10.style.background = ''
+    btn15.style.background = ''
+    btn25.style.background = '#26C2AE'
+    btn50.style.background = ''
+
     calculator(25)
 });
 btn50.addEventListener('click', function () {
+    btn5.style.background = ''
+    btn10.style.background = ''
+    btn15.style.background = ''
+    btn25.style.background = ''
+    btn50.style.background = '#26C2AE'
+
     calculator(50)
 });
 custom.addEventListener('input', function () {
@@ -47,7 +76,7 @@ function calculator(tip) {
     }
 }
 
-resetBtn.addEventListener('click', ()=>{
+resetBtn.addEventListener('click', () => {
     tipAmount.innerText = '$0.00'
     totalAmount.innerText = '$0.00'
 
