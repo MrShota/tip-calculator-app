@@ -16,21 +16,24 @@ const totalAmount = document.getElementById('total-amount');
 
 const resetBtn = document.getElementById('reset-btn');
 
-btn5.addEventListener('click', function(){
+btn5.addEventListener('click', function () {
     calculator(5)
 });
-btn10.addEventListener('click', function(){
+btn10.addEventListener('click', function () {
     calculator(10)
 });
-btn15.addEventListener('click', function(){
+btn15.addEventListener('click', function () {
     calculator(15)
 });
-btn25.addEventListener('click', function(){
+btn25.addEventListener('click', function () {
     calculator(25)
 });
-btn50.addEventListener('click', function(){
+btn50.addEventListener('click', function () {
     calculator(50)
 });
+custom.addEventListener('input', function () {
+    calculator(custom.value)
+})
 
 function calculator(tip) {
     if (peopleInput.value === '') {
