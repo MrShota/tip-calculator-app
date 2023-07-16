@@ -85,7 +85,14 @@
     border: none;
     background-color: var(--bg-input);
     text-align: right;
+    padding-right: 10px;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 
 .bill-input:hover,
 .people-input:hover {
@@ -157,10 +164,11 @@
     top: 50%;
     left: 5%;
 }
-#errorText{
-color: red;
-font-size: .7rem;
-float: right;
+
+#errorText {
+    color: red;
+    font-size: .7rem;
+    float: right;
 }
 
 /* ----------section two ---------------- */
@@ -196,7 +204,8 @@ float: right;
     text-transform: capitalize;
 
 }
-.dollarSign{
+
+.dollarSign {
     width: 25px;
     margin-left: 70px;
     font-size: 2rem;
@@ -206,6 +215,7 @@ float: right;
     color: var(--btn-color);
 
 }
+
 .tip-amount,
 .total-amount {
     width: 200px;
@@ -288,15 +298,17 @@ float: right;
 
         margin: 32px;
     }
-    .dollarSign{
+
+    .dollarSign {
         width: 25px;
         margin-left: 90px;
-          
+
     }
+
     .tip-amount,
     .total-amount {
-        width: 150px;
-      
+        width: 145px;
+
     }
 
     .display-text-bottom {

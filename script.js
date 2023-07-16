@@ -68,6 +68,7 @@ function calculator(tip) {
     if (peopleInput.value === '') {
         errorText.innerText = `Can't be zero`;
         errorText.style.color = 'red'
+        peopleInput.style.border.color="red"
     }
     else {
         errorText.innerText = ``;
