@@ -47,7 +47,11 @@ function calculator(tip) {
     }
 }
 
+resetBtn.addEventListener('click', ()=>{
+    tipAmount.innerText = '$0.00'
+    totalAmount.innerText = '$0.00'
 
+})
 
 
 
