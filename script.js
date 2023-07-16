@@ -16,18 +16,31 @@ const totalAmount = document.getElementById('total-amount');
 
 const resetBtn = document.getElementById('reset-btn');
 
-btn5.addEventListener('click', calculator);
-// btn10.addEventListener('click', calculator);
+btn5.addEventListener('click', function(){
+    calculator(5)
+});
+btn10.addEventListener('click', function(){
+    calculator(10)
+});
+btn15.addEventListener('click', function(){
+    calculator(15)
+});
+btn25.addEventListener('click', function(){
+    calculator(25)
+});
+btn50.addEventListener('click', function(){
+    calculator(50)
+});
 
-function calculator() {
+function calculator(tip) {
     if (peopleInput.value === '') {
-        errorText.innerText=`Can't be zero`;
-        errorText.style.color='red'
+        errorText.innerText = `Can't be zero`;
+        errorText.style.color = 'red'
     }
     else {
-        errorText.innerText=``;
-        tipAmount.innerText = (billInput.value * 5 / 100) / peopleInput.value;
-        totalAmount.innerText = (+billInput.value + (billInput.value * 5 / 100)) / peopleInput.value;
+        errorText.innerText = ``;
+        tipAmount.innerText = (billInput.value * tip / 100) / peopleInput.value;
+        totalAmount.innerText = (+billInput.value + (billInput.value * tip / 100)) / peopleInput.value;
     }
 }
 
