@@ -196,14 +196,25 @@ float: right;
     text-transform: capitalize;
 
 }
-
-.tip-amount,
-.total-amount {
+.dollarSign{
+    width: 25px;
+    margin-left: 70px;
     font-size: 2rem;
     font-weight: 700;
     line-height: 47.39px;
     letter-spacing: -.67px;
     color: var(--btn-color);
+
+}
+.tip-amount,
+.total-amount {
+    width: 200px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 47.39px;
+    letter-spacing: -.67px;
+    color: var(--btn-color);
+    overflow: hidden;
 }
 
 .reset-btn {
@@ -276,6 +287,16 @@ float: right;
         padding: 40px;
 
         margin: 32px;
+    }
+    .dollarSign{
+        width: 25px;
+        margin-left: 90px;
+          
+    }
+    .tip-amount,
+    .total-amount {
+        width: 150px;
+      
     }
 
     .display-text-bottom {
